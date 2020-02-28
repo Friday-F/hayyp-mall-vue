@@ -1,0 +1,9 @@
+.omnibus .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.omnibus .main-container #mind {
+  width: 500px;
+  height: 500px;
+}

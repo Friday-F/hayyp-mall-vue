@@ -1,0 +1,23 @@
+.category .main-container .form-search {
+  padding: 20px;
+  border: 1px solid #ebebeb;
+}
+.category .main-container .search-form {
+  display: flex;
+}
+.category .main-container .search-form .inp {
+  margin-right: 20px;
+}
+.category .main-container .search-form .search-btn {
+  background: #04b475;
+}
+.category .main-container .table {
+  margin-top: 40px;
+}
+.category .main-container .page-warp {
+  text-align: right;
+  margin-top: 20px;
+}
+.category .main-container .btn {
+  margin: 0;
+}

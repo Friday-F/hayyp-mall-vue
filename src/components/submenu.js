@@ -1,0 +1,32 @@
+let data = [
+    {
+        name:"概览",
+        level:'1',
+        icon:'el-icon-s-data',
+        children:[
+            {
+                name:"数据统计",
+                level:'1-1',
+                url:"/home/omnibus"
+            }
+        ]
+    },
+    {
+        name:"商品",
+        level:'2',
+        icon:'el-icon-s-goods',
+        children:[
+            {
+                name:"商品管理",
+                level:'2-1',
+                url:"/home/product"
+            },
+            {
+                name:"品类管理",
+                level:'2-2',
+                url:"/home/classify"
+            }
+        ]
+    }
+]
+export default data
