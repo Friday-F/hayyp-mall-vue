@@ -6,12 +6,13 @@ import router from './router'
 import './style/index.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import util from './libs/util'
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-  let user = localStorage.getItem('username')
+  let user = util.getUserName()
   if (user) {
     // 允许通过，按照正常的逻辑向下跳转
     next()

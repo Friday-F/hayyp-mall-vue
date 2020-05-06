@@ -2,6 +2,7 @@
 import Vue from 'vue';
 import axios from 'axios';
 import qs from 'qs'
+import util from './util'
 import {Notification} from 'element-ui'
 
 let ajax = axios.create();
@@ -46,7 +47,7 @@ ajax.interceptors.response.use(response => {
         Notification.warning({
             message: response.data.msg
         });
-        window.localStorage.removeItem('username')
+        util.removeLogin()
         window.location.href = '/#/login'
     }else{
         Notification.warning({

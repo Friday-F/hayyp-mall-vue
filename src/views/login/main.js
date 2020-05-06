@@ -1,5 +1,6 @@
 
 import api from '../../api/api'
+import util from '../../libs/util'
 export default {
     name:"login",
     data(){
@@ -28,7 +29,7 @@ export default {
                 api.login(this.form)
                     .then(response=>{
                         if(response.status === 0){
-                            window.localStorage.setItem('username',response.data.username)
+                            util.freshLogin(response.data.username)
                             this.$router.push({
                                 name:'home'
                             })

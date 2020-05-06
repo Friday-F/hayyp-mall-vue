@@ -1,6 +1,7 @@
 
 import api from '../../api/api'
 var echarts = require('echarts');
+import util from '../../libs/util'
 export default {
     name:"omnibus",
     data(){
@@ -51,6 +52,7 @@ export default {
     },
     created(){
         this.initData()
+        console.log(util.isLogin())
     },
     methods:{
       initData(){
