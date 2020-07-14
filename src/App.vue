@@ -17,7 +17,7 @@ body,html{
   height:100%;
 }
 #app {
-  width: 100%;
+  width: 99%;
   height:100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
