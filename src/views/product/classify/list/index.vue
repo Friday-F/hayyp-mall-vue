@@ -3,7 +3,7 @@
         <div class="location">
             <el-breadcrumb separator-class="el-icon-arrow-right">
                 <el-breadcrumb-item :to="{ name: 'omnibus' }">首页</el-breadcrumb-item>
-                <el-breadcrumb-item>品类管理</el-breadcrumb-item>
+                <el-breadcrumb-item>品类管理学习git.base</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="main-container">
