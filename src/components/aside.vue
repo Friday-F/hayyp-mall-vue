@@ -10,6 +10,7 @@
             @close="handleClose"
             background-color="#2b2e33"
             text-color="#ffffff"
+            @select='handleSelect'
             active-text-color="#ffffff">
              <el-submenu :index="item.level" v-for="(item,index) in submenuData" :key='index'>
                 <template slot="title">
@@ -78,6 +79,9 @@ export default {
           },
           handleClose(key, keyPath) {
             console.log(key, keyPath);
+          },
+          handleSelect(key, keyPath){
+              console.log(key, keyPath);
           }
     }
 }
